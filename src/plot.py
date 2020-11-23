@@ -1,10 +1,12 @@
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
 print ("Plot from dataset")
 
-def openFile():
-    print("Teste 1")
+plt.style.use("bmh")
 
-def readFile():
-    print("Teste 2")
-
-openFile()
-readFile()
+df = pd.read_csv('../data/crx.data', sep=",")
+df.columns
+df.head()
+df.info()
